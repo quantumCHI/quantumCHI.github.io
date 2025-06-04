@@ -1,1 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hitesh Sharma's portfolio showcasing Quantum Computing and HCI projects for financial and business applications">
+    <meta name="keywords" content="quantum computing, HCI, Qiskit, portfolio optimization, quantum finance, TQA, Equal1, Fidelity">
+    <title>Hitesh Sharma - QC+HCI Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f4f8; }
+        .header { text-align: center; padding: 50px; background: linear-gradient(135deg, #1e3a8a, #3b82f6); color: white; }
+        .header h1 { font-size: 2.5em; }
+        .project-card { transition: transform 0.3s; margin-bottom: 20px; }
+        .project-card:hover { transform: scale(1.05); }
+        .modal-body img { max-width: 100%; }
+        .section { padding: 50px; }
+        footer { text-align: center; padding: 20px; background: #1e3a8a; color: white; }
+        @media (max-width: 768px) { .header h1 { font-size: 1.8em; } .section { padding: 30px; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Hitesh Sharma</h1>
+        <p>MSc-HCI Student Specializing in Quantum Computing Interfaces</p>
+    </div>
 
+    <div class="section container">
+        <h2>About Me</h2>
+        <p>I’m a final-year MSc in Human-Computer Interaction student, researching user-friendly interfaces for quantum computing applications at the intersection of finance and technology. Proficient in Qiskit, Figma, and Plotly, I aim to bridge quantum complexity with intuitive design for industry leaders like TQA, Equal1, and Fidelity Investments. My thesis explores enhancing accessibility of quantum tools for non-experts, combining technical expertise with HCI principles to drive innovation in quantum finance and business solutions.</p>
+    </div>
+
+    <div class="section container">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="project-card card">
+                    <img src="https://via.placeholder.com/300x200?text=Qiskit+Financial+Optimization" class="card-img-top" alt="Qiskit Project">
+                    <div class="card-body">
+                        <h5 class="card-title">Quantum Financial Optimization</h5>
+                        <p class="card-text">Developed a Qiskit circuit implementing Grover’s algorithm for portfolio optimization, visualized with Plotly. Designed for financial applications at Fidelity and Moody’s, enhancing asset allocation efficiency.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card card">
+                    <img src="https://via.placeholder.com/300x200?text=Figma+Quantum+Interface" class="card-img-top" alt="Figma Prototype">
+                    <div class="card-body">
+                        <h5 class="card-title">Quantum Interface Prototype</h5>
+                        <p class="card-text">Designed a Figma prototype for a Qiskit-based quantum programming interface, tested for usability with 5 participants. Supports TQA’s goal of accessible quantum education tools.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card card">
+                    <div id="plotly-chart" style="height: 200px;"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Quantum Monte Carlo Visualization</h5>
+                        <p class="card-text">Interactive Plotly dashboard visualizing quantum Monte Carlo simulation outputs for risk assessment, tailored for Equal1’s QSoC and Fidelity’s financial applications.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card card">
+                    <img src="https://via.placeholder.com/300x200?text=MSc+Thesis" class="card-img-top" alt="Thesis Summary">
+                    <div class="card-body">
+                        <h5 class="card-title">MSc Thesis: QC-HCI Interfaces</h5>
+                        <p class="card-text">Researching user-centered design for quantum computing interfaces, focusing on financial applications. Includes usability studies and prototype designs for TQA and Equal1.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project4Modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="project1Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quantum Financial Optimization</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/500x300?text=Qiskit+Circuit" alt="Qiskit Output">
+                    <p>Implemented Grover’s algorithm in Qiskit to optimize financial portfolios, reducing computation time. Visualized results with Plotly for clarity. Code available at <a href="https://github.com/quantumCHI/qiskit-financial">GitHub</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project2Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quantum Interface Prototype</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/500x300?text=Figma+Wireframe" alt="Figma Wireframe">
+                    <p>Created a Figma prototype for a Qiskit interface, simplifying quantum circuit design for non-experts. Usability tests with 5 participants improved navigation by 30%. View at <a href="https://www.figma.com/yourprototype">Figma</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project3Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quantum Monte Carlo Visualization</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Developed an interactive Plotly dashboard to visualize quantum Monte Carlo simulation outputs for financial risk assessment. Optimized for Equal1’s QSoC and Fidelity’s use cases. Code at <a href="https://github.com/quantumCHI/monte-carlo">GitHub</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="project4Modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">MSc Thesis: QC-HCI Interfaces</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/500x300?text=Thesis+Visual" alt="Thesis Visual">
+                    <p>My thesis explores designing accessible quantum computing interfaces for financial applications, combining Qiskit and HCI principles. Includes prototypes and usability studies for TQA and Equal1.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sharma.hitesh.raj@gmail.com">sharma.hitesh.raj@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sharmahiteshraj/">Hitesh Sharma</a></p>
+        <p>GitHub: <a href="https://github.com/quantumCHI/">quantumCHI</a></p>
+    </div>
+
+    <footer>
+        <p>© 2025 Hitesh Sharma. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <script>
+        // Plotly visualization for quantum project
+        var data = [{
+            x: ['Qubit 1', 'Qubit 2', 'Qubit 3'],
+            y: [0.4, 0.3, 0.2],
+            type: 'bar',
+            marker: { color: '#3b82f6' }
+        }];
+        var layout = {
+            title: 'Quantum State Probabilities',
+            xaxis: { title: 'Qubits' },
+            yaxis: { title: 'Probability' },
+            margin: { t: 50, b: 50, l: 50, r: 50 }
+        };
+        Plotly.newPlot('plotly-chart', data, layout);
+    </script>
+</body>
+</html>
